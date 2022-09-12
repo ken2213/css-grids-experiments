@@ -1,3 +1,35 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+
+.grid-container {
+  display: grid;
+/* 
+  grid-template-columns: 50px 50px;
+  grid-template-rows: 50px 50px 50px; 
+*/
+
+/* There is a shorthand for this and it is...*/
+/* grid-template: grid-template-rows / grid-template-columns*/
+  grid-template: 50px 50px 50px / 50px 50px;
+
+/* To add some spacing on elements, add...*/
+
+/* row-gap */
+/* column-gap */
+/* 
+  row-gap: 10px;
+  column-gap: 30px;
+*/
+/* There is a shorthand for this and it is...*/
+/* gap: row-gap column-gap ; */
+  gap: 10px 30px;
+
+}
+
+.grid-container > div {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
